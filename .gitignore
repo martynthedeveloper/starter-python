@@ -1,0 +1,6 @@
+venv
+.idea
+.coverage
+htmlconv
+**/.pytest_cache
+**/__pycache__
