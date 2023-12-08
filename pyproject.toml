@@ -1,6 +1,8 @@
-[tool.pytest.ini.options]
-pythonpath = [
-    "src"
+[tool.pytest.ini_options]
+#https://docs.pytest.org/en/stable/explanation/goodpractices.html#test-discovery
+pythonpath = "src"
+addopts = [
+    "--import-mode=importlib",
 ]
 
 [tool.black]
