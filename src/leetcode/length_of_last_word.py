@@ -2,7 +2,6 @@ def length_of_last_word(s: str) -> int:
     answer = 0
 
     for c in s[::-1]:
-
         if c == " " and answer == 0:
             continue
 
