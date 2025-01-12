@@ -1,19 +1,22 @@
-def plus_one(data: list):
+from typing import List
+
+
+def plus_one(digits: List[int]) -> List[int]:
     carry = False
 
-    for i in range(len(data) - 1, -1, -1):
-        if carry and data[i] < 9:
-            data[i] = data[i] + 1
-            return data
+    for i in range(len(digits) - 1, -1, -1):
+        if carry and digits[i] < 9:
+            digits[i] = digits[i] + 1
+            return digits
 
-        if data[i] < 9:
-            data[i] = data[i] + 1
-            return data
-        else:
-            data[i] = 0
-            carry = True
+        if digits[i] < 9:
+            digits[i] = digits[i] + 1
+            return digits
+
+        digits[i] = 0
+        carry = True
 
     if carry:
-        data.insert(0, 1)
+        digits.insert(0, 1)
 
-    return data
+    return digits
