@@ -14,3 +14,8 @@ def test_example_2():
 def test_example_3():
     answer = plus_one([9])
     assert answer == [1, 0]
+
+
+def test_example_4():
+    answer = plus_one([1, 9])
+    assert answer == [2, 0]
