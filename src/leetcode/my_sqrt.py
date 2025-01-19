@@ -1,12 +1,12 @@
 def my_sqrt(x: int) -> int:
-    if x == 0:
-        return 0
+    if x == 1:
+        return 1
 
     left = 0
     right = int(x / 2)
     guess = 0
 
-    while right - left > 1:
+    while right - left >= 1:
 
         guess = left + int((right - left) / 2)
         square = guess * guess
@@ -15,9 +15,11 @@ def my_sqrt(x: int) -> int:
             return guess
 
         if square < x:
-            left = guess
+            left = guess + 1
+            guess = guess + 1
         else:
-            right = guess
+            right = guess - 1
+            guess = guess - 1
 
     return guess
 

@@ -19,3 +19,13 @@ def test_example_3():
 def test_example_4():
     answer = my_sqrt(1)
     assert answer == 1
+
+
+def test_example_5():
+    answer = my_sqrt(9)
+    assert answer == 3
+
+
+def test_example_6():
+    answer = my_sqrt(25)
+    assert answer == 5
