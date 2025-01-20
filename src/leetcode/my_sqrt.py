@@ -7,7 +7,6 @@ def my_sqrt(x: int) -> int:
     guess = 0
 
     while right - left >= 1:
-
         guess = left + int((right - left) / 2)
         square = guess * guess
 

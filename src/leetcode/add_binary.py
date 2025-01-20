@@ -2,13 +2,11 @@
 
 
 def add_binary(a: str, b: str) -> str:
-
     size = max(len(a), len(b))
     answer = ""
     carry = 0
 
     for i in range(size):
-
         aa = 0 if i >= len(a) else int(a[len(a) - i - 1])
         bb = 0 if i >= len(b) else int(b[len(b) - i - 1])
 
