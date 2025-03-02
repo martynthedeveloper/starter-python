@@ -1,6 +1,7 @@
 astroid==3.0.1
 black==23.11.0
 click==8.1.7
+colorama==0.4.6
 coverage==7.3.2
 dill==0.3.7
 iniconfig==2.0.0
