@@ -40,4 +40,7 @@ def test_example_7():
 
 def test_all():
     for i in range(30):
-        assert math.floor(math.sqrt(i)) == my_sqrt(i)
+        check = math.floor(math.sqrt(i))
+        actual = my_sqrt(i)
+
+        assert check == actual

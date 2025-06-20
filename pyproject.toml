@@ -1,3 +1,17 @@
+[project]
+name = "starter-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=25.1.0",
+    "coverage>=7.8.0",
+    "isort>=6.0.1",
+    "pylint>=3.3.6",
+    "pytest>=8.3.5",
+]
+
 [tool.pytest.ini_options]
 #https://docs.pytest.org/en/stable/explanation/goodpractices.html#test-discovery
 pythonpath = "src"
@@ -7,19 +21,13 @@ addopts = [
 
 [tool.black]
 line-length = 100
-
-profile = "black"
-
+# profile = "black"
 line_length = 100
 
 [tool.mypy]
-
 check_untyped_defs = true
-
 show_error_codes = true
-
 pretty = true
-
 ignore_missing_imports = true
 
 [tool.pylint.messages_control]
