@@ -4,12 +4,12 @@
 set -e
 
 echo "The following files will be removed:"
-git clean -X -d -n
+git clean -fxdn
 
 read -p "Proceed ? (y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    git clean -X -d -f
+    git clean -fxd
 fi
 
