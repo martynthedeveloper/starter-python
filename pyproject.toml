@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "A starter Python project to test technologies"
 readme = "readme.md"
 requires-python = ">=3.13"
-dependencies = [
+dependencies = []
+
+[project.optional-dependencies]
+test = [
   "black>=25.1.0",
   "coverage>=7.8.0",
   "debugpy>=1.8.0",
