@@ -5,24 +5,22 @@ description = "A starter Python project to test technologies"
 readme = "readme.md"
 requires-python = ">=3.13"
 dependencies = [
-    "black>=25.1.0",
-    "coverage>=7.8.0",
-    "isort>=6.0.1",
-    "pylint>=3.3.6",
-    "pytest>=8.3.5",
+  "black>=25.1.0",
+  "coverage>=7.8.0",
+  "debugpy>=1.8.0",
+  "isort>=6.0.1",
+  "pylint>=3.3.6",
+  "pytest>=8.3.5",
 ]
 
 [tool.pytest.ini_options]
 #https://docs.pytest.org/en/stable/explanation/goodpractices.html#test-discovery
 pythonpath = "src"
-addopts = [
-    "--import-mode=importlib",
-]
+addopts = ["--import-mode=importlib"]
 
 [tool.black]
 line-length = 100
 # profile = "black"
-line_length = 100
 
 [tool.mypy]
 check_untyped_defs = true
@@ -32,8 +30,8 @@ ignore_missing_imports = true
 
 [tool.pylint.messages_control]
 disable = [
-    "missing-class-docstring",
-    "missing-function-docstring",
-    "missing-module-docstring",
-    "import-error",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  "missing-module-docstring",
+  "import-error",
 ]
