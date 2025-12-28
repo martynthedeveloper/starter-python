@@ -4,3 +4,8 @@
 htmlconv
 **/.pytest_cache
 **/__pycache__
+
+# Ignore package metadata directories
+*.egg-info/
+egg-info/
+eg-info/
