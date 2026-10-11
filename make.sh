@@ -12,6 +12,9 @@ function check_success() {
   fi
 }
 
+ruff check .
+check_success
+
 uv run coverage run -m pytest -vvs
 check_success
 
